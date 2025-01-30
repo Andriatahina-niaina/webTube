@@ -8,6 +8,7 @@ export const CategoryPills : React.FC<CategoryPillsProps> = () =>{
             <div className="flex whitespace-nowrap gap-3 transition-transform w-[max-content]">
                 <Button variant="dark" className="py-1 px-3 roundesd-lg-whitespace-nowrap">All</Button>
                 <Button variant="default" className="py-1 px-3 roundesd-lg-whitespace-nowrap">javascript</Button>
+                <Button variant="default" className="py-1 px-3 roundesd-lg-whitespace-nowrap">Sarobidy momota</Button>
             </div>
         </div>
     )

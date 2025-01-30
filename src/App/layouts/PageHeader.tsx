@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "../assets/Youtube Logo.png";
 import { Button } from "../components/Button";
 import { ArrowLeft, Bell, Menu, Mic, Search, Upload, User } from "lucide-react";
 
@@ -7,6 +6,7 @@ interface PageHeaderProps {}
 
 export const PageHeader: React.FC<PageHeaderProps> = () => {
     const [showFullWidthSearch, setShowFullWidthSearch] = useState(false);
+    const logo = "/Youtube Logo.png"; 
 
     return (
         <div className="flex gap-10 lg:gap-20 justify-between pt-2 mb-6 mx-4">
@@ -18,11 +18,7 @@ export const PageHeader: React.FC<PageHeaderProps> = () => {
                     <Menu />
                 </Button>
                 <a href="/">
-                    <img src={logo} 
-                         alt="YouTube Logo" 
-                         width="120" 
-                         height="20" 
-                    />
+                 <img src={logo} alt="YouTube Logo" width="120" height="20" />
                 </a>
             </div>
             <form className={`  gap-4 flex-grow justify-center ${

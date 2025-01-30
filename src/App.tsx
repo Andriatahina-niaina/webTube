@@ -1,6 +1,6 @@
 
-import { PageHeader } from './layouts/PageHeader'
-import { CategoryPills } from './components/CategoryPills'
+import { PageHeader } from './App/layouts/PageHeader'
+import { CategoryPills } from './App/components/CategoryPills'
 
 function App() {
   return (
