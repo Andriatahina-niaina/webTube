@@ -1,7 +1,3 @@
-export type UserInput = {
+export type UserInput = {};
 
-}
-
-export type UserOutput = {
-    
-}
+export type UserOutput = {};

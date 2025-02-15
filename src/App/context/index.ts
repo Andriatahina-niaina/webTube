@@ -1,7 +1,7 @@
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient } from "@prisma/client";
 
 let ctx: Context;
-let env = '';
+let env = "";
 
 export type Context = {
   prisma: PrismaClient;
@@ -14,7 +14,7 @@ export const createContext = (): Context => {
 };
 
 export const getContext = (): Context => {
-  const environment: string = process.env.NODE_ENV ?? 'development';
+  const environment: string = process.env.NODE_ENV ?? "development";
   if (env === environment && ctx !== undefined) {
     return ctx;
   } else {
